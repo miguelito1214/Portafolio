@@ -1,0 +1,205 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+a {
+  color: #00c1d4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d1d5db;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00c1d4;
+}
+
+.section-text {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #1f2937;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  color: #9ca3af;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #00c1d4;
+  color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #009ea8;
+  transform: translateY(-2px);
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background: #1f2937;
+  color: #ffffff;
+}
+
+form .btn {
+  width: auto;
+}
+
+/* Estilos del encabezado */
+.glassmorphism-header {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro y transparente */
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glassmorphism-header .container {
+  position: relative;
+  z-index: 10;
+}
+
+.glassmorphism-header h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.glassmorphism-header p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.glassmorphism-header .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.glassmorphism-header .btn:hover {
+  background-color: #2e8b57;
+}
+
+/* Centrando el botón de CV */
+.cv-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #ff4500;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+  background-color: #ff6347;
+}
+
+/* Animación de la sección */
+.glassmorphism-header {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.glassmorphism-header.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
