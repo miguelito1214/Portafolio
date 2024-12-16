@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - José Miguel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="glassmorphism-header">
+    <div class="container">
+      <h1>¡Hola! Soy José Miguel</h1>
+      <p>Desarrollador Web | C# | Ionic | Unity</p>
+      <a href="https://drive.google.com/file/d/1xbuI0a8orDw08iiofxjXqOQZsDQeMPvx/view?usp=drive_link" class="btn cv-button" target="_blank">Descargar mi CV</a>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre Mí</h2>
+      <p class="section-text">
+        Soy un apasionado de la tecnología y el desarrollo web, con experiencia en 
+        aplicaciones móviles, videojuegos y herramientas dinámicas. Mi objetivo es crear soluciones innovadoras que combinen funcionalidad y diseño.
+      </p>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3 class="project-title">App Contratación de Niñeras</h3>
+          <p class="project-description">
+            Backend en C# para gestionar perfiles y bases de datos en una app colaborativa.
+          </p>
+          <a href="https://github.com/OfiveSAdeCV/likeamomAPISwitch" target="_blank" class="btn">Ver repositorio</a>
+        </div>
+        
+        <div class="project-card">
+          <h3 class="project-title">PWA - Offline</h3>
+          <p class="project-description">
+            Una Progressive Web App (PWA) funcional sin conexión, ideal para mejorar experiencias en ambientes con poca conectividad.
+          </p>
+          <a href="https://miguelito1214.github.io/Offline/" target="_blank" class="btn">Probar PWA</a>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Pagina web de prueba</h3>
+          <p class="project-description">
+            Una pequeña pagina de prueba para pulir conocimientos
+          </p>
+          <a href="https://miguelito1214.github.io/Pagina-prueba/" target="_blank" class="btn">Ver repositorio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <form action="https://formspree.io/f/tu-email" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required class="form-input">
+        <input type="email" name="email" placeholder="Tu correo" required class="form-input">
+        <textarea name="message" placeholder="Tu mensaje" rows="5" required class="form-input"></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
